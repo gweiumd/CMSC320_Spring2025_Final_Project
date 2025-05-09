@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>CMSC320_Final_Project (1)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>CMSC320_Final_Project (2)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -8083,7 +8083,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="IMPORTANT">IMPORTANT<a class="anchor-link" href="#IMPORTANT">¶</a></h1><p>We had already downloaded our data you would need to do the same in order to use the Kaggle dataset. If you want to directly pull the dataset from Kaggle without downloading, use this code instead!</p>
+<h1 id="IMPORTANT">IMPORTANT<a class="anchor-link" href="#IMPORTANT">¶</a></h1><p>We had already downloaded our data, you would need to do the same in order to use the Kaggle dataset. If you want to directly pull the dataset from Kaggle without downloading, use this code instead!</p>
 <pre><code># Install dependencies as needed:
 # pip install kagglehub[pandas-datasets]
 import kagglehub
@@ -9019,7 +9019,7 @@ df = kagglehub.load_dataset(
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We have a few numerical physical characteristics and we want to see their relation to the age of death. So to do that, we are going to plot the data between these traits, like systolic blood pressure, weight, cholesterol, etc., and the age of death and see if there is any correlation between them.</p>
+<p>We have a few numerical physical characteristics and we want to see their relation to the age of death. To do that, we are going to plot these traits, like systolic blood pressure, weight, cholesterol, etc., against the age of death and see if there is any correlation between them.</p>
 </div>
 </div>
 </div>
@@ -9141,7 +9141,7 @@ df = kagglehub.load_dataset(
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="3.1.-Conclusion">3.1. Conclusion<a class="anchor-link" href="#3.1.-Conclusion">¶</a></h3><p>Due to our low $r^2$ values, which tell us how much of the variation in our Y values, the age of death, from our line-of-best-fit to the actual data can be explained by our X values, our variable trait, we can see none of these factors correlate strongly with age of death, with our highest $r^2$ value being only 0.23.</p>
 <p>However, we can see that all of the factors, especially for weight and cholesterol levels: if these factors increase, the age of death tends to decrease. Therefore, our initial exploration shows that higher weight and cholesterol levels has a tendency to correlate with earlier deaths.</p>
-<h4 id="Why-does-this-matter?">Why does this matter?<a class="anchor-link" href="#Why-does-this-matter?">¶</a></h4><p>Having an idea one how our dependent variable that we are investigating, the age of death, will be affected another variable can help us understand why we might get certain results in our analysis down the line.</p>
+<h4 id="Why-does-this-matter?">Why does this matter?<a class="anchor-link" href="#Why-does-this-matter?">¶</a></h4><p>Having an idea on how our dependent variable that we are investigating, the age of death, will be affected another variable can help us understand why we might get certain results in our analysis down the line.</p>
 </div>
 </div>
 </div>
@@ -9303,7 +9303,7 @@ P-value: 0.0000
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Since the p-value is 0.0000 which is less than 0.05 we reject the null hypothesis which is that there is no difference in average age between males and females. From our plot we can see that females tend to die at older ages than males. We also have a T-statistic of -29.80 which is very large in magnitude and negative, which means that the mean age for males is much lower than the mean age for females.</p>
+<p>Since the p-value is 0.0000 which is less than 0.05 we reject the null hypothesis which is that there is no difference in average age between males and females. From our plot we can see that females tend to die at older ages than males. We also have a T-statistic of -29.80 which is very large in magnitude and negative, which means that the mean age for males is significantly lower than the mean age for females.</p>
 <h3 id="What-does-this-mean?">What does this mean?<a class="anchor-link" href="#What-does-this-mean?">¶</a></h3><p>There is statistical evidence that biological females will live longer than biological males! This can have a huge impact on predicting the age of death as such a factor like sex can either decrease or increase the age we find from a machine learning model.</p>
 </div>
 </div>
@@ -9486,7 +9486,7 @@ P-value: 0.0000
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Our last hypothesis testing is going to be between the number of drinks a person consumes per week to their age of death. We think this is such an important test to run as drinking doesn't necessarily show immediate affects to the degredation of longevity. However, using statistical analysis can help potentially paint a different, more reaslistic picture for those who don't believe that drinking can affect their health.</p>
+<p>Our last hypothesis testing is going to be between the number of drinks a person consumes per week to their age of death. We think this is an important test to run as drinking doesn't necessarily show immediate affects to the degredation of longevity. However, using statistical analysis can help potentially paint a different, more realistic picture for those who don't believe that drinking can affect their health.</p>
 </div>
 </div>
 </div>
@@ -9561,7 +9561,7 @@ P-value: 0.0000
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ol start="16">
-<li>Perform <a href="https://www.datacamp.com/tutorial/anova-test">ANOVA</a> testing on our 3 groups (Note: The reason we use ANOVA is to tell us if there significant differences between the groups.)</li>
+<li>Perform <a href="https://www.datacamp.com/tutorial/anova-test">ANOVA</a> testing on our 3 groups (Note: The reason we use ANOVA is to tell us if there significant differences between more than 2 groups.)</li>
 </ol>
 </div>
 </div>
@@ -9604,7 +9604,7 @@ P-value: 0.0000
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ol start="17">
-<li>Perform <a href="https://personal.utdallas.edu/~herve/abdi-HSD2010-pretty.pdf">Tukey's Honest Significant Difference Test</a>. (This is a form of <a href="https://www.cwauthors.com/article/significance-and-use-of-post-hoc-analysis-studies">Post-Hoc Testing</a> and it will help us see between the three groups, which ones are actually most different and most similar to each other)</li>
+<li>Perform <a href="https://personal.utdallas.edu/~herve/abdi-HSD2010-pretty.pdf">Tukey's Honest Significant Difference Test</a>. (This is a form of <a href="https://www.cwauthors.com/article/significance-and-use-of-post-hoc-analysis-studies">Post-Hoc Testing</a>. It will help us see the relationship between each pair of the three groups, and determine their relative relationships).</li>
 </ol>
 </div>
 </div>
@@ -9933,7 +9933,7 @@ R-squared: 0.6465
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Our final <strong>R^2</strong> value was <strong>0.6465</strong>, which shows our linear regression model was somewhat able to find a relationship between our features and age of death. The fact that it is not closer to 1.0 could be because there are other factors not considered in the dataset that contribute significantly to age of death. For example, socioeconomic status could be a highly important factor.</p>
-<p>Note: We did not include gender into our Regression Model testing as it is not a 'y'/'n' response. We wanted to see for conditions and traits related to lifestyle choices, and gender did not fit within those parameters.</p>
+<p>Note: We did not include gender in our Regression Model. We wanted to see how conditions and traits related to lifestyle choices affected lifespan, and gender did not fit within those parameters.</p>
 </div>
 </div>
 </div>
@@ -9955,7 +9955,7 @@ R-squared: 0.6465
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Additionally, we decided to try out higher order polynomial regression and ridge/lasso regression, to see if these methods could better capture the relationship between the data, which would improving our model's R-squared and reducing error.</p>
+<p>Additionally, we decided to try out higher order polynomial regression and ridge/lasso regression, to see if these methods could better capture the relationship between the data, which would be shown by improving our model's R-squared and reducing error.</p>
 </div>
 </div>
 </div>
@@ -10034,7 +10034,7 @@ R-squared: 0.6510
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We also tried polynomial models with a higher order (3+). When the model was of degree 3, the resulting MAE was 15.35 and the R-squared was -1.20. Additionally, the model took approximately 7x longer to converge. Higher order models (4+) simly did not converge within the computational limits that are present (Colab ran out of RAM)</p>
+<p>We also tried polynomial models with a higher order (3+). When the model was of degree 3, the resulting MAE was 15.35 and the R-squared was -1.20. Additionally, the model took approximately 7x longer to converge. Higher order models (4+) did not converge within the computational limits that are present (Colab ran out of RAM)</p>
 </div>
 </div>
 </div>
@@ -10163,7 +10163,7 @@ Alpha: 100, Mean Absolute Error: 11.0550, R²: 0.6516
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Now that we have picked our model for predicting the age of death given our features, lets visualize it! Let's see how our model visually performs to the data.</p>
+<p>Now that we have picked our model for predicting the age of death given our features, lets visualize it! Let's see how our model's predictions visually compare to the actual data.</p>
 </div>
 </div>
 </div>
@@ -10223,7 +10223,7 @@ Alpha: 100, Mean Absolute Error: 11.0550, R²: 0.6516
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We create a scatter plot of actual vs. predicted age at death, with each dot representing a person. The red dashed line shows perfect prediction, and most points follow a clear upward trend, suggesting good model performance. The Mean Absolute Error was 11.24, meaning predictions were off by about 11 years on average. The R-squared score was 0.65, indicating that our model explains 65% of the variation in age at death.</p>
+<p>We create a scatter plot of actual vs. predicted age at death, with each dot representing a person. The red dashed line shows perfect predictions. Points above the red line represent our model predicting a longer lifespan than reality, and points below the line represent the model predicting a shorter lifespan than reality. Most points follow a clear upward trend, suggesting acceptable model performance. The Mean Absolute Error was 11.24, meaning predictions were off by about 11 years on average. The R-squared score was 0.65, indicating that our model explains 65% of the variation in age at death.</p>
 </div>
 </div>
 </div>
@@ -10245,7 +10245,7 @@ Alpha: 100, Mean Absolute Error: 11.0550, R²: 0.6516
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>When you train a model, what you are essentially doing is adjusting a set of coefficients, also known as "weights", that control the end behaviour of our machine learning model. Because the data we use changes the weights behaviour, we can use these weights to then analyze which features actually made the most difference in our model. Here, we visualize those differences in the form of feature importances.</p>
+<p>When you train a model, what you are essentially doing is adjusting a set of coefficients, also known as "weights", that control the end behavior of our machine learning model. Because the data we use changes the weights behaviour, we can use these weights to then analyze which features actually made the most difference in our model. Here, we visualize those differences in the form of feature importances.</p>
 </div>
 </div>
 </div>
@@ -10301,7 +10301,7 @@ Alpha: 100, Mean Absolute Error: 11.0550, R²: 0.6516
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>This bar chart of feature importance shows how each trait affects predicted age. Features like immune deficiency, addiction, and opioid use were linked to significantly lower predicted lifespan, while others like cholesterol and blood pressure had minimal effects. These visualizations highlight which factors most strongly relate to lifespan in our dataset.</p>
-<p>After creating the plot, we noticed is that although a given feature may have a strong relationship with age of death, that does not directly translate to having a high importance in the regression. For example, during our exploratory data analysis, we found that there is a significant difference in age of death for HD/S vs. Non-HD/s, and also as the number of drinks per week varies. However, while having HD/S versus not does have significant impact, the number of drinks doesn't.</p>
+<p>After creating the plot, we noticed is that although a given feature may have a strong relationship with age of death, that does not directly translate to having a high importance in the regression. For example, during our exploratory data analysis, we found that there is a significant difference in age of death for HD/S vs. Non-HD/s, and also as the number of drinks per week varies. However, while having HD/S versus not was an important feature to the model, the number of drinks was not.</p>
 </div>
 </div>
 </div>
@@ -10400,7 +10400,7 @@ Alpha: 100, Mean Absolute Error: 11.0550, R²: 0.6516
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Ultimately, we have found that there are many factors that contribute significantly to age of death. Our linear regression model was able to give reasonable predictions on age of death, showing that the features we considered do indeed correlate with lifespan.</p>
+<p>Ultimately, we have found that there are many factors that contribute significantly to age of death. Our linear regression model was able to give acceptable predictions on age of death, showing that the features we considered do indeed correlate with lifespan.</p>
 <p>It can be seen from our feature impact ranking that there are many things that a person can do, which correlate to living longer. For example, smoking or other drug use can lead to significantly short lifespan. However, it is also clear that many factors are not directly controllable by the individual. For example, family history of cancer or immune deficiencies have heavy negative correlations with lifespan. More complicated factors like addiction (which is affected by many things: genetics, family history, socioeconomic status, etc…), also can heavily reduce lifespan. These non-controllable or complicated factors tend to have the highest impact on mortality.</p>
 <p>Medical professionals may be able to use these findings to determine which risk factors of a patient to pay the most attention to. Addictions, family history of disease, and drug use are factors that any medical professional should consider strongly when deciding on the need for treatment.</p>
 </div>
